@@ -63,23 +63,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #cfcfcf;
 }
-
-@media (max-width: 1600px) {
-  .img-produtos {
-    height: 280px;
-  }
-}
-
-@media (max-width: 1500px) {}
-
-@media (max-width: 1430px) {
-  .img-produtos {
-    height: 250px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .img-produtos {
-    height: 230px;
-  }
-}
