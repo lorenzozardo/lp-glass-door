@@ -18,12 +18,13 @@ footer {
 .footer_content_logo_socials {
   display: flex;
   justify-content: center;
-  padding-right: 4rem;
+  align-items: center;
+  padding-right: 2rem;
 }
 
 .footer-logo {
-  width: 350px;
-  margin-bottom: 1.5rem;
+  width: 180px;
+  margin: .8rem 2rem 1.5rem 0;
 }
 
 .socials {
