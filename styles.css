@@ -1,8 +1,12 @@
+@import url("styles/header.css");
+@import url("styles/main.css");
+@import url("styles/footer.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins&display=swap');
 
 :root {
-  --cor-de-fundo: #ffffff;
-  --cor-container: #f8f8f8;
+  --background-color: #ffffff;
+  --container-color: #f8f8f8;
 }
 
 * {
@@ -15,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   height: 100%;
-  background-color: var(--cor-de-fundo);
+  background-color: var(--background-color);
 }
 
 /* Botão Whatsapp */

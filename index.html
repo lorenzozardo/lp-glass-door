@@ -15,10 +15,7 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="/styles/base.css">
-  <link rel="stylesheet" href="/styles/header.css">
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="styles.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <title>Glass Door - Portas para Churrasqueiras e Lareiras</title>
@@ -33,10 +30,14 @@
   <header>
     <div class="container-nav">
       <a href="#"><img class="menu-logo" src="./img/Logo_Glass_Door_Vertical.png" alt=""></a>
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
       <ul class="nav">
-        <li class="nav_item nav_item_produtos"><a href="#backToTop">Nossos Produtos</a></li>
-        <li class="nav_item nav_item_quemsomos"><a href="quem_somos.html">Quem Somos</a></li>
-        <li class="nav_item nav_item_whatsapp"><a href="https://api.whatsapp.com/send?phone=5551998192122"
+        <li class="nav__item nav__item-produtos"><a href="#backToTop">Nossos Produtos</a></li>
+        <li class="nav__item nav__item-quemsomos"><a href="quem_somos.html">Quem Somos</a></li>
+        <li class="nav__item nav__item-whatsapp"><a href="https://api.whatsapp.com/send?phone=5551998192122"
             target="_blank"><i class="bi bi-whatsapp"></i>Whatsapp</a></li>
       </ul>
     </div>
