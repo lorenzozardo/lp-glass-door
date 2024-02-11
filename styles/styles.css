@@ -1,0 +1,70 @@
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins&display=swap');
+
+:root {
+  --background-color: #ffffff;
+  --container-color: #f8f8f8;
+  --text-color: #000;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  height: 100%;
+  background-color: var(--container-color);
+}
+
+/* Botão Whatsapp */
+
+.whatsapp-fixed {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 1px 1px 5px #888;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-fixed i {
+  margin: 0;
+}
+
+.whatsapp-fixed:hover {
+  color: #fff;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cfcfcf;
+}

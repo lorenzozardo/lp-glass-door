@@ -15,9 +15,11 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/glightbox.min.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
   <title>Glass Door - Portas para Churrasqueiras e Lareiras</title>
   <link rel="shortcut icon" href="./img/Icon.ico" type="image/x-icon">
 </head>
@@ -72,70 +74,52 @@
       </a>
     </div>
 
-    <!-- Image Slider
-    <div class="container-slider">
-      <div class="slider-wrapper">
-        <div class="image-list">
-          <img src="./img/thermo4.png" alt="img-1" class="image-item">
-          <img src="./img/thermo5.png" alt="img-2" class="image-item">
-          <img src="./img/thermo6.png" alt="img-3" class="image-item">
-          <img src="./img/thermo4.png" alt="img-4" class="image-item">
-          <img src="./img/thermo5.png" alt="img-5" class="image-item">
-        </div>
-      </div>
-      <div class="slider-scrollbar">
-        <div class="scrollbar-track">
-          <div class="scrollbar-thumb">
-
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Produtos -->
+    <!-- Galeria -->
     <section class="produtos" id="backToTop">
       <div class="header-produtos">
         <h1 class="titulo-produtos">Portas Térmicas</h1>
         <p class="descricao-produtos">Confira os diferentes tipos de portas para churrasqueiras e lareiras</p>
       </div>
 
+      <div class="list__categories">
+        <a href="">Todos</a>
+        <a href="">Lareiras</a>
+        <a href="">Churrasqueiras</a>
+        <a href="">Tampas</a>
+        <a href="">Suportes para Espetos</a>
+        <a href="">Rotativas</a>
+      </div>
+
       <div class="produtos-container">
-        <div class="produto1">
+        <a href="./img/thermo4.png" class="produto1 glightbox">
           <img src="./img/thermo4.png" class="img-produtos area-1" alt="">
-        </div>
-        <div class="produto2">
+        </a>
+        <a href="./img/thermo5.png" class="produto2 glightbox">
           <img src="./img/thermo5.png" class="img-produtos area-2" alt="">
-        </div>
-        <div class="produto3">
+        </a>
+        <a href="./img/thermo6.png" class="produto3 glightbox">
           <img src="./img/thermo6.png" class="img-produtos area-3" alt="">
-        </div>
-        <div class="produto4">
+        </a>
+        <a href="./img/thermo4.png" class="produto4 glightbox">
           <img src="./img/thermo4.png" class="img-produtos area-4" alt="">
-        </div>
-        <div class="produto5">
+        </a>
+        <a href="./img/thermo5.png" class="produto5 glightbox">
           <img src="./img/thermo5.png" class="img-produtos area-5" alt="">
-        </div>
-        <div class="produto6">
+        </a>
+        <a href="./img/thermo6.png" class="produto6 glightbox">
           <img src="./img/thermo6.png" class="img-produtos area-6" alt="">
-        </div>
-        <div class="produto7">
+        </a>
+        <a href="./img/thermo4.png" class="produto7 glightbox">
           <img src="./img/thermo4.png" class="img-produtos area-7" alt="">
-        </div>
-        <div class="produto8">
+        </a>
+        <a href="./img/thermo5.png" class="produto8 glightbox">
           <img src="./img/thermo5.png" class="img-produtos area-8" alt="">
-        </div>
-        <div class="produto9">
+        </a>
+        <a href="./img/thermo6.png" class="produto9 glightbox">
           <img src="./img/thermo6.png" class="img-produtos area-9" alt="">
-        </div>
+        </a>
       </div>
     </section>
-
-    <div id="overlay" class="overlay">
-      <span class="close-btn" id="closeBtn">&times;</span>
-      <img src="" id="expandedImg" class="expanded-img" alt="">
-      <span class="prev-btn" id="prevBtn">&#10094;</span>
-      <span class="next-btn" id="nextBtn">&#10095;</span>
-    </div>
 
     <!-- Informações -->
     <section class="section-infos">
@@ -179,7 +163,12 @@
 
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="main.js"></script>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/glightbox.min.js"></script>
+  <script type="text/javascript">
+    const lightbox = GLightbox({ loop: true })
+  </script>
 </body>
 
 </html>
