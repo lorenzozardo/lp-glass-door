@@ -12,9 +12,10 @@ sr.reveal('.area-8', { duration: 2000 })
 sr.reveal('.area-9', { duration: 2000 })
 
 function filterProducts(category) {
-  const produtos = document.querySelectorAll('.produtos-container a');
+  const products = document.querySelectorAll('.products__section a')
+  const subcategoriesContainer = document.querySelector('.subcategories__section')
 
-  produtos.forEach(produto => {
+  products.forEach(produto => {
     const produtoCategory = produto.getAttribute('data-category')
 
     if (category === 'all' || produtoCategory === category) {
@@ -23,30 +24,17 @@ function filterProducts(category) {
       produto.style.opacity = 0
     }
   })
+  
+  subcategoriesContainer.innerHTML = ''
+
+  if (category === 'lareiras' || category === 'churrasqueiras') {
+    const subcategories = ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras e Churrasqueiras de Canto']
+
+    subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
+      const words = subcategory.split(' ')
+      const lastWord = words[words.length - 1]
+
+      return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`
+    }).join('')
+  }
 }
-
-function showSubcategories(category) {
-    const subcategoriasContainer = document.querySelector('.subcategorias-container');
-
-    const subcategorias = ['subcategoria1', 'subcategoria2', 'subcategoria3'];
-
-    // Verifique se a categoria é "Lareiras" ou "Churrasqueiras" antes de atualizar a lista de subcategorias
-    if (category === 'lareiras' || category === 'churrasqueiras') {
-        const subcategoriasHTML = subcategorias.map(subcategoria => {
-            return `<a onclick="filterProducts('${subcategoria}')">${subcategoria}</a>`;
-        }).join('');
-
-        subcategoriasContainer.innerHTML = subcategoriasHTML;
-
-        // Exiba o contêiner de subcategorias
-        subcategoriasContainer.style.display = 'block';
-    } else {
-        // Oculte o contêiner de subcategorias para outras categorias
-        subcategoriasContainer.style.display = 'none';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Passe a categoria desejada como argumento para a função showSubcategories
-    showSubcategories('all');
-});
