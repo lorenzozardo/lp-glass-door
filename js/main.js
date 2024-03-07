@@ -13,7 +13,7 @@ sr.reveal('.area-9', { duration: 2000 })
 
 function filterProducts(category) {
   const products = document.querySelectorAll('.products__section a')
-  const subcategoriesContainer = document.querySelector('.subcategories__section')
+  const subcategoriesContainer = document.querySelector('.list__subcategories')
 
   products.forEach(produto => {
     const produtoCategory = produto.getAttribute('data-category')
@@ -25,7 +25,9 @@ function filterProducts(category) {
     }
   })
   
-  subcategoriesContainer.innerHTML = ''
+  if (category !== 'embutir' & category !== 'sobrepor' & category !== 'canto') {
+    subcategoriesContainer.innerHTML = ''
+  }
 
   if (category === 'lareiras' || category === 'churrasqueiras') {
     const subcategories = ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras e Churrasqueiras de Canto']

@@ -36,19 +36,21 @@
 
 .list__categories {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  column-gap: 30px;
   font-size: 22px;
 }
 
-.subcategories__section {
+.list__subcategories {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 20px;
   font-size: 18px;
   margin-top: 5px;
 }
 
 .list__categories a, 
-.subcategories__section a {
+.list__subcategories a {
   cursor: pointer;
   position: relative;
   display: flex;
@@ -57,20 +59,25 @@
   color: var(--text-color);
 }
 
+.list__categories a:hover, 
+.list__subcategories a:hover {
+  font-weight: bold;
+}
+
 .list__categories a:after,
-.subcategories__section a:after {
+.list__subcategories a:after {
   content: "";
   background-color: #111111;
   position: absolute;
   height: 2.5px;
-  width: 0%;
+  width: 0;
   left: 0;
-  bottom: -3px;
+  bottom: 0px;
   transition: 0.4s;
 }
 
 .list__categories a:hover:after,
-.subcategories__section a:hover:after {
+.list__subcategories a:hover:after {
   width: 100%;
 }
 
