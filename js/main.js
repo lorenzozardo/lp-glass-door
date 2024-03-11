@@ -15,28 +15,28 @@ function filterProducts(category) {
   const products = document.querySelectorAll('.products__section a')
   const subcategoriesContainer = document.querySelector('.list__subcategories')
 
-  products.forEach(produto => {
-    const produtoCategory = produto.getAttribute('data-category')
+  if (category !== 'embutir' & category !== 'sobrepor' & category !== 'canto') {
+    subcategoriesContainer.innerHTML = ''
+  }
+  
+  if (category === 'lareiras' || category === 'churrasqueiras') {
+    const subcategories = ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras e Churrasqueiras de Canto']
+    
+    subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
+      const words = subcategory.split(' ')
+      const lastWord = words[words.length - 1]
+      
+      return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`
+    }).join('')
+  }
 
-    if (category === 'all' || produtoCategory === category) {
+  products.forEach(produto => {
+    const produtoCategories = produto.getAttribute('data-category').split(' ')
+
+    if (category === 'all' || produtoCategories.includes(category)) {
       produto.style.opacity = 1
     } else {
       produto.style.opacity = 0
     }
   })
-  
-  if (category !== 'embutir' & category !== 'sobrepor' & category !== 'canto') {
-    subcategoriesContainer.innerHTML = ''
-  }
-
-  if (category === 'lareiras' || category === 'churrasqueiras') {
-    const subcategories = ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras e Churrasqueiras de Canto']
-
-    subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
-      const words = subcategory.split(' ')
-      const lastWord = words[words.length - 1]
-
-      return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`
-    }).join('')
-  }
 }

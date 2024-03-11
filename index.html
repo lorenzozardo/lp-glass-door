@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,13 +70,8 @@
 
     <!-- Galeria -->
     <section class="produtos" id="produtos">
-      <div class="header-produtos">
-        <h1 class="titulo-produtos">Portas Térmicas</h1>
-        <p class="descricao-produtos">Confira os diferentes tipos de portas para churrasqueiras e lareiras</p>
-      </div>
 
       <div class="categories__section">
-        <h1>Filtre por categoria:</h1>
         <div class="list__categories">
           <a onclick="filterProducts('all')">Todos</a>
           <a onclick="filterProducts('lareiras')">Lareiras</a>
@@ -89,15 +83,15 @@
         <div class="list__subcategories"></div>
       </div>
 
-      <div class="products__section">
-        <a href="./img/lareira2.jpg" class="produto1 glightbox" data-category="churrasqueiras">
+      <div class="products__section" id="products__section">
+        <a href="./img/lareira2.jpg" class="produto1 glightbox" data-category="lareiras embutir">
           <img src="./img/lareira2.jpg" class="img-produtos area-1" alt="">
         </a>
-        <a href="./img/thermo5.png" class="produto2 glightbox">
-          <img src="./img/thermo5.png" class="img-produtos area-2" alt="">
+        <a href="./img/lareira3.jpg" class="produto2 glightbox" data-category="lareiras embutir">
+          <img src="./img/lareira3.jpg" class="img-produtos area-2" alt="">
         </a>
-        <a href="./img/thermo6.png" class="produto3 glightbox">
-          <img src="./img/thermo6.png" class="img-produtos area-3" alt="">
+        <a href="./img/lareira4.jpg" class="produto3 glightbox" data-category="lareiras embutir">
+          <img src="./img/lareira4.jpg" class="img-produtos area-3" alt="">
         </a>
         <a href="./img/thermo4.png" class="produto4 glightbox">
           <img src="./img/thermo4.png" class="img-produtos area-4" alt="">
@@ -173,6 +167,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <script src="./js/main.js"></script>
+  <script src="./images.json"></script>
   <script src="./js/glightbox.min.js"></script>
   <script type="text/javascript">
     const lightbox = GLightbox({ loop: true })

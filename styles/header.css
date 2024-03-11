@@ -1,6 +1,10 @@
 header {
   box-shadow: 0 0 14px -10px #000;
-  position: relative;
+  position: fixed; /* Adicionando a propriedade para tornar o cabeçalho fixo */
+  width: 100%; /* Definindo a largura como 100% para ocupar toda a largura da tela */
+  top: 0;
+  background-color: var(--container-color); /* Adicione uma cor de fundo para que o texto seja visível */
+  z-index: 1000;
 }
 
 .container-nav {
@@ -8,14 +12,14 @@ header {
   width: 75%;
   padding-right: 2%;
   font-size: 20px;
-  height: 85px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .menu-logo {
-  height: 68px;
+  height: 60px;
 }
 
 .nav {
@@ -45,7 +49,7 @@ header {
   height: 2.7px;
   width: 0%;
   left: 0;
-  bottom: -3px;
+  bottom: 0px;
   transition: 0.4s;
 }
 
@@ -69,23 +73,6 @@ header {
 
 .nav__item-whatsapp a:hover {
   color: #25d366;
-}
-
-.cabeçalho__menu-hamburguer {
-  width: 35px;
-  height: 35px;
-  background-image: url("../img/Menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-}
-
-#menu {
-  display: none;
-}
-
-.container__rotulo {
-  display: none;
 }
 
 @media (max-width: 1100px) {

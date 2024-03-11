@@ -1,3 +1,7 @@
+.carousel {
+  margin-top: 70px;
+}
+
 .produtos {
   width: 100%;
   display: flex;
@@ -5,48 +9,29 @@
   align-items: center;
 }
 
-.header-produtos {
-  width: 90%;
-}
-
-.titulo-produtos {
-  margin-top: 40px;
-  font-size: 40px;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.descricao-produtos {
-  font-size: 18px;
-  margin: 0;
-}
-
 .categories__section {
-  width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 20px 0 10px 0;
-}
-
-.categories__section h1 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 0;
+  justify-content: center;
+  margin: 40px 0 10px 0;
 }
 
 .list__categories {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 30px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .list__subcategories {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
   font-size: 18px;
   margin-top: 5px;
+  font-size: 20px;
 }
 
 .list__categories a, 
@@ -82,13 +67,13 @@
 }
 
 .products__section {
+  width: 85%;
   flex-wrap: wrap;
   margin: 40px auto;
   display: grid;
   gap: 30px;
   margin-top: 25px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 50px;
 }
 
 .products__section a {
