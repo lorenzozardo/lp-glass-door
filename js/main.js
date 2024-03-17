@@ -15,7 +15,7 @@ function filterProducts(category) {
   const products = document.querySelectorAll('.products__section a')
   const subcategoriesContainer = document.querySelector('.list__subcategories')
 
-  if (category !== 'embutir' & category !== 'sobrepor' & category !== 'canto') {
+  if (category !== 'churrasqueira-embutir' & category !== 'churrasqueira-sobrepor' & category !== 'churrasqueira-canto' & category !== 'lareira-embutir' & category !== 'lareira-sobrepor' & category !== 'lareira-canto') {
     subcategoriesContainer.innerHTML = ''
   }
   
@@ -24,7 +24,12 @@ function filterProducts(category) {
     
     subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
       const words = subcategory.split(' ')
-      const lastWord = words[words.length - 1]
+      let lastWord = words[words.length - 1]
+      if (category === 'lareiras') {
+        lastWord = "lareira-" + words[words.length - 1]
+      } else if (category === 'churrasqueiras') {
+        lastWord = "churrasqueira-" + words[words.length - 1]
+      }
       
       return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`
     }).join('')
@@ -34,9 +39,11 @@ function filterProducts(category) {
     const produtoCategories = produto.getAttribute('data-category').split(' ')
 
     if (category === 'all' || produtoCategories.includes(category)) {
-      produto.style.opacity = 1
+      produto.style.display = 'block'
+      produto.classList.add('glightbox')
     } else {
-      produto.style.opacity = 0
+      produto.style.display = 'none'
+      produto.classList.remove('glightbox')
     }
   })
 }

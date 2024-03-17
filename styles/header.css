@@ -1,15 +1,15 @@
 header {
   box-shadow: 0 0 14px -10px #000;
-  position: fixed; /* Adicionando a propriedade para tornar o cabeçalho fixo */
-  width: 100%; /* Definindo a largura como 100% para ocupar toda a largura da tela */
+  position: fixed;
+  width: 100%;
   top: 0;
-  background-color: var(--container-color); /* Adicione uma cor de fundo para que o texto seja visível */
+  background-color: var(--container-color);
   z-index: 1000;
 }
 
 .container-nav {
   margin: 0 auto;
-  width: 75%;
+  width: 80%;
   padding-right: 2%;
   font-size: 20px;
   height: 75px;
@@ -40,7 +40,6 @@ header {
   align-items: center;
   text-decoration: none;
   color: #000;
-  font-weight: bold;
 }
 
 .nav__item a:after {
@@ -50,7 +49,7 @@ header {
   width: 0%;
   left: 0;
   bottom: 0px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .nav__item-produtos a:after,
@@ -64,6 +63,10 @@ header {
 
 .nav__item a:hover:after {
   width: 100%;
+}
+
+.nav__item a:hover {
+  font-weight: bold;
 }
 
 .nav__item i {
@@ -109,6 +112,10 @@ header {
 }
 
 @media (max-width: 700px) {
+  .container-nav {
+    justify-content: center;
+  }
+
   .nav {
     display: none;
     position: absolute;
