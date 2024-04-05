@@ -48,6 +48,7 @@ function filterProducts(category) {
   })
 }
 
+// Funcionalidade categoria ativa
 const categoriesContainer = document.querySelector(".categories__section")
 
 categoriesContainer.addEventListener("click", function (event) {
