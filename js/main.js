@@ -15,7 +15,7 @@ function filterProducts(category) {
   const products = document.querySelectorAll('.products__section a')
   const subcategoriesContainer = document.querySelector('.list__subcategories')
 
-  if (category !== 'churrasqueira-embutir' & category !== 'churrasqueira-sobrepor' & category !== 'churrasqueira-canto' & category !== 'lareira-embutir' & category !== 'lareira-sobrepor' & category !== 'lareira-canto') {
+  if (category !== 'churrasqueira-embutir' && category !== 'churrasqueira-sobrepor' && category !== 'churrasqueira-canto' && category !== 'lareira-embutir' && category !== 'lareira-sobrepor' && category !== 'lareira-canto') {
     subcategoriesContainer.innerHTML = ''
   }
   
@@ -47,3 +47,25 @@ function filterProducts(category) {
     }
   })
 }
+
+const categoriesContainer = document.querySelector(".categories__section")
+
+categoriesContainer.addEventListener("click", function (event) {
+  const target = event.target
+
+  if (target.closest(".list__categories a")) {
+    const current = document.querySelector(".list__categories .active");
+    if (current) {
+      current.classList.remove("active")
+    }
+    target.classList.add("active")
+  }
+
+  if (target.closest(".list__subcategories a")) {
+    const current = document.querySelector(".list__subcategories .active");
+    if (current) {
+      current.classList.remove("active")
+    }
+    target.classList.add("active")
+  }
+})

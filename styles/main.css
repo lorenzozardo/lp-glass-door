@@ -18,6 +18,7 @@
 }
 
 .list__categories {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -52,18 +53,22 @@
 .list__categories a:after,
 .list__subcategories a:after {
   content: "";
-  background-color: #111111;
+  background-color: #111;
   position: absolute;
   height: 2.7px;
   width: 0;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   transition: 0.4s;
 }
 
 .list__categories a:hover:after,
 .list__subcategories a:hover:after {
   width: 100%;
+}
+
+.active {
+  font-weight: bold;
 }
 
 .products__section {
