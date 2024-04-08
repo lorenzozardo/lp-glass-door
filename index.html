@@ -32,9 +32,9 @@
     <div class="container-nav">
       <a href="#"><img class="menu-logo" src="./img/Logo_Glass_Door_Vertical.png" alt=""></a>
       <ul class="nav">
-        <li class="nav__item nav__item-produtos"><a href="#produtos">Nossos Produtos</a></li>
-        <li class="nav__item nav__item-quemsomos"><a href="#quem_somos">Quem Somos</a></li>
-        <li class="nav__item nav__item-whatsapp"><a href="https://api.whatsapp.com/send?phone=5551998192122"
+        <li class="nav__item nav__item__products"><a href="#produtos">Nossos Produtos</a></li>
+        <li class="nav__item nav__item__about"><a href="#quem_somos">Quem Somos</a></li>
+        <li class="nav__item nav__item__whatsapp"><a href="https://api.whatsapp.com/send?phone=5551998192122"
             target="_blank"><i class="bi bi-whatsapp"></i>Whatsapp</a></li>
       </ul>
     </div>
@@ -68,8 +68,8 @@
       </a>
     </div>
 
-    <!-- Produtos -->
-    <section class="produtos" id="produtos">
+    <!-- Products -->
+    <section class="products" id="produtos">
 
       <div class="categories__section">
         <div class="list__categories">
@@ -77,67 +77,39 @@
           <a onclick="filterProducts('lareiras')">Lareiras</a>
           <a onclick="filterProducts('churrasqueiras')">Churrasqueiras</a>
           <a onclick="filterProducts('tampas')">Tampas</a>
-          <a onclick="filterProducts('suportes')">Suportes para Espetos</a>
           <a onclick="filterProducts('rotativas')">Rotativas</a>
+          <a onclick="filterProducts('suportes')">Suportes para Espetos</a>
         </div>
         <div class="list__subcategories"></div>
       </div>
 
-      <div class="products__section" id="products__section">
-        <a href="./img/lareira2.jpg" class="produto1" data-category="lareiras lareira-embutir">
-          <img src="./img/lareira2.jpg" class="img-produtos area-1" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto2" data-category="churrasqueiras churrasqueira-embutir">
-          <img src="./img/lareira3.jpg" class="img-produtos area-2" alt="">
-        </a>
-        <a href="./img/lareira4.jpg" class="produto3" data-category="lareiras lareira-sobrepor">
-          <img src="./img/lareira4.jpg" class="img-produtos area-3" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto4" data-category="lareiras lareira-sobrepor">
-          <img src="./img/lareira3.jpg" class="img-produtos area-4" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto5" data-category="lareiras lareira-canto">
-          <img src="./img/lareira3.jpg" class="img-produtos area-5" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto6" data-category="lareiras lareira-sobrepor">
-          <img src="./img/lareira3.jpg" class="img-produtos area-6" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto7" data-category="lareiras lareira-canto">
-          <img src="./img/lareira3.jpg" class="img-produtos area-7" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto8" data-category="lareiras lareira-sobrepor">
-          <img src="./img/lareira3.jpg" class="img-produtos area-8" alt="">
-        </a>
-        <a href="./img/lareira3.jpg" class="produto9" data-category="lareiras lareira-canto">
-          <img src="./img/lareira3.jpg" class="img-produtos area-9" alt="">
-        </a>
-      </div>
+      <div class="products__section" id="products__section"></div>
     </section>
 
-    <!-- Informações -->
+    <!-- Informations -->
     <section class="section-infos">
       <div class="container-infos">
-        <div class="info envio">
+        <div class="info">
           <i class="bi bi-truck"></i>
           <p>ENTREGAMOS PARA TODO O BRASIL</p>
         </div>
-        <div class="info parcela">
+        <div class="info">
           <i class="bi bi-credit-card"></i>
           <p>PARCELAMOS NO CARTÃO</p>
         </div>
-        <div class="info qualidade">
+        <div class="info">
           <i class="bi bi-check-lg"></i>
           <p>QUALIDADE PADRÃO GLASS DOOR</p>
         </div>
       </div>
     </section>
     
-    <section class="quem__somos" id="quem_somos">
-      <div class="quem__somos__text">
+    <section class="about" id="quem_somos">
+      <div class="about__text">
         <h1>Quem Somos</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est nesciunt excepturi corrupti debitis vitae sequi assumenda, dolores doloremque tempore atque pariatur dolorum modi accusantium nostrum ea nulla deleniti officia!</p>
       </div>
-      <div class="quem__somos__img">
+      <div class="about__img">
         <img src="./img/lareira2.jpg" alt="">
       </div>
     </section>
@@ -148,7 +120,7 @@
       <div class="footer_content_logo_socials">
         <img src="./img/logo-preta.png" class="footer-logo">
         <ul class="socials">
-          <img src="./img/linha.png" class="footer-linha">
+          <img src="./img/hr.png" class="footer-hr">
           <li><a href="https://api.whatsapp.com/send?phone=5551998192122" target="_blank"><i
                 class="bi bi-whatsapp"></i></a></li>
           <li><a href="https://www.instagram.com/_glassdoor_/" target="_blank"><i class="bi bi-instagram"></i></a></li>
@@ -166,8 +138,8 @@
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
+  <!-- Glightbox -->
   <script src="./js/main.js"></script>
-  <script src="./images.json"></script>
   <script src="./js/glightbox.min.js"></script>
   <script type="text/javascript">
     const lightbox = GLightbox({ loop: true })

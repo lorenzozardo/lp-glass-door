@@ -52,12 +52,12 @@ header {
   transition: 0.3s;
 }
 
-.nav__item-produtos a:after,
-.nav__item-quemsomos a:after {
+.nav__item__products a:after,
+.nav__item__about a:after {
   background-color: #111111;
 }
 
-.nav__item-whatsapp a:after {
+.nav__item__whatsapp a:after {
   background-color: #25d366;
 }
 

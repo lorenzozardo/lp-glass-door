@@ -1,0 +1,92 @@
+{
+  "products": [
+    { 
+      "image": "./img/lareira-embutir-1.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-1.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-1.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-embutir-2.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-embutir-3.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/tampa-1.jpg", 
+      "category": "tampas" 
+    },
+    { 
+      "image": "./img/lareira-embutir-4.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-embutir-5.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-embutir-6.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-embutir-7.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/tampa-2.jpg", 
+      "category": "tampas" 
+    },
+    { 
+      "image": "./img/lareira-embutir-8.jpg", 
+      "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/tampa-3.jpg", 
+      "category": "tampas"
+    },
+    { 
+      "image": "./img/lareira-sobrepor-1.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-2.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-3.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-4.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-5.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-6.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-7.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-8.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-9.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    }
+  ]
+}
