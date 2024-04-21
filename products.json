@@ -13,16 +13,64 @@
       "category": "churrasqueiras churrasqueiras-embutir" 
     },
     { 
+      "image": "./img/lareira-canto-1.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-2.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-2.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-3.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
       "image": "./img/lareira-embutir-2.jpg", 
       "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-2.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-4.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-canto-2.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-3.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-9.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
     },
     { 
       "image": "./img/lareira-embutir-3.jpg", 
       "category": "lareiras lareiras-embutir" 
     },
     { 
+      "image": "./img/churrasqueira-sobrepor-12.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
       "image": "./img/tampa-1.jpg", 
       "category": "tampas" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-7.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-3.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
     },
     { 
       "image": "./img/lareira-embutir-4.jpg", 
@@ -33,8 +81,56 @@
       "category": "lareiras lareiras-embutir" 
     },
     { 
+      "image": "./img/lareira-sobrepor-4.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-1.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-canto-3.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-4.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-4.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-canto-4.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-5.jpg", 
+      "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-5.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-5.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
       "image": "./img/lareira-embutir-6.jpg", 
       "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-5.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/lareira-canto-5.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-3.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
     },
     { 
       "image": "./img/lareira-embutir-7.jpg", 
@@ -45,6 +141,26 @@
       "category": "tampas" 
     },
     { 
+      "image": "./img/churrasqueira-canto-6.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-6.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-6.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-7.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/lareira-canto-6.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
       "image": "./img/lareira-embutir-8.jpg", 
       "category": "lareiras lareiras-embutir" 
     },
@@ -53,40 +169,132 @@
       "category": "tampas"
     },
     { 
+      "image": "./img/churrasqueira-sobrepor-7.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
       "image": "./img/lareira-sobrepor-1.jpg", 
       "category": "lareiras lareiras-sobrepor" 
     },
     { 
-      "image": "./img/lareira-sobrepor-2.jpg", 
-      "category": "lareiras lareiras-sobrepor" 
+      "image": "./img/churrasqueira-embutir-8.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
     },
     { 
-      "image": "./img/lareira-sobrepor-3.jpg", 
-      "category": "lareiras lareiras-sobrepor" 
+      "image": "./img/tampa-4.jpg", 
+      "category": "tampas"
     },
     { 
-      "image": "./img/lareira-sobrepor-4.jpg", 
-      "category": "lareiras lareiras-sobrepor" 
+      "image": "./img/lareira-canto-7.jpg", 
+      "category": "lareiras lareiras-canto" 
     },
     { 
-      "image": "./img/lareira-sobrepor-5.jpg", 
-      "category": "lareiras lareiras-sobrepor" 
+      "image": "./img/churrasqueira-sobrepor-8.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
     },
     { 
       "image": "./img/lareira-sobrepor-6.jpg", 
       "category": "lareiras lareiras-sobrepor" 
     },
     { 
-      "image": "./img/lareira-sobrepor-7.jpg", 
-      "category": "lareiras lareiras-sobrepor" 
+      "image": "./img/tampa-5.jpg", 
+      "category": "tampas"
+    },
+    { 
+      "image": "./img/suporte-4.jpg", 
+      "category": "suportes"
     },
     { 
       "image": "./img/lareira-sobrepor-8.jpg", 
       "category": "lareiras lareiras-sobrepor" 
     },
     { 
-      "image": "./img/lareira-sobrepor-9.jpg", 
+      "image": "./img/churrasqueira-sobrepor-9.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/lareira-canto-8.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-7.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/suporte-2.jpg", 
+      "category": "suportes"
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-13.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/tampa-6.jpg", 
+      "category": "tampas"
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-9.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/suporte-3.jpg", 
+      "category": "suportes"
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-11.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-10.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/suporte-5.jpg", 
+      "category": "suportes"
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-11.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-canto-8.jpg", 
+      "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/lareira-sobrepor-2.jpg", 
       "category": "lareiras lareiras-sobrepor" 
+    },
+    { 
+      "image": "./img/suporte-6.jpg", 
+      "category": "suportes"
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-10.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-12.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/tampa-7.jpg", 
+      "category": "tampas"
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-13.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/suporte-1.jpg", 
+      "category": "suportes"
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-14.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/churrasqueira-sobrepor-14.jpg", 
+      "category": "churrasqueiras churrasqueiras-sobrepor" 
     }
   ]
 }

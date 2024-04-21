@@ -1,3 +1,13 @@
+const swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 4000
+  }
+})
+
 function filterProducts(category) {
   const products = document.querySelectorAll('.products__section a')
   const subcategoriesContainer = document.querySelector('.list__subcategories')
@@ -76,38 +86,13 @@ async function insertProducts() {
 
     const imgElement = document.createElement('img')
     imgElement.src = product.image
-    imgElement.className = `img__products area-${index + 1}`
+    imgElement.className = 'img__products'
 
     aElement.appendChild(imgElement)
     productsSection.appendChild(aElement)
   })
-  const lightbox = GLightbox()
+  const lightbox = GLightbox({ loop: true })
   lightbox.init()
-
-  // Scroll Reveal
-  window.sr = ScrollReveal({ reset: false })
-
-  sr.reveal('.area-1', { duration: 1000 })
-  sr.reveal('.area-2', { duration: 1000 })
-  sr.reveal('.area-3', { duration: 1000 })
-  sr.reveal('.area-4', { duration: 1500 })
-  sr.reveal('.area-5', { duration: 1500 })
-  sr.reveal('.area-6', { duration: 1500 })
-  sr.reveal('.area-7', { duration: 2000 })
-  sr.reveal('.area-8', { duration: 2000 })
-  sr.reveal('.area-9', { duration: 2000 })
-  sr.reveal('.area-10', { duration: 2000 })
-  sr.reveal('.area-11', { duration: 2000 })
-  sr.reveal('.area-12', { duration: 2000 })
-  sr.reveal('.area-13', { duration: 2000 })
-  sr.reveal('.area-14', { duration: 2000 })
-  sr.reveal('.area-15', { duration: 2000 })
-  sr.reveal('.area-16', { duration: 2000 })
-  sr.reveal('.area-17', { duration: 2000 })
-  sr.reveal('.area-18', { duration: 2000 })
-  sr.reveal('.area-19', { duration: 2000 })
-  sr.reveal('.area-20', { duration: 2000 })
-  sr.reveal('.area-21', { duration: 2000 })
 }
 
 

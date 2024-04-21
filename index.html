@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
@@ -41,31 +42,13 @@
   </header>
 
     <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="./img/carousel-image.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./img/carousel-image.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./img/carousel-image.png" alt="Third slide">
-        </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/carousel-image.png"></div>
+        <div class="swiper-slide"><img src="./img/carousel-image.png"></div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
     <!-- Products -->
@@ -98,8 +81,8 @@
           <p>PARCELAMOS NO CARTÃO</p>
         </div>
         <div class="info">
-          <i class="bi bi-check-lg"></i>
-          <p>QUALIDADE PADRÃO GLASS DOOR</p>
+          <i class="bi bi-whatsapp"></i>
+          <p>ATENDIMENTO ESPECIALIZADO</p>
         </div>
       </div>
     </section>
@@ -110,7 +93,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est nesciunt excepturi corrupti debitis vitae sequi assumenda, dolores doloremque tempore atque pariatur dolorum modi accusantium nostrum ea nulla deleniti officia!</p>
       </div>
       <div class="about__img">
-        <img src="./img/lareira2.jpg" alt="">
+        <img src="./img/Icon.ico" alt="">
       </div>
     </section>
 
@@ -134,6 +117,8 @@
     </div>
   </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -141,9 +126,6 @@
   <!-- Glightbox -->
   <script src="./js/main.js"></script>
   <script src="./js/glightbox.min.js"></script>
-  <script type="text/javascript">
-    const lightbox = GLightbox({ loop: true })
-  </script>
 </body>
 
 </html>
