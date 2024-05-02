@@ -93,25 +93,7 @@ header {
   }
 }
 
-@media (max-width: 900px) {
-  .container-nav {
-    font-size: 17px;
-  }
-
-  .menu-logo {
-    height: 55px;
-  }
-
-  .nav {
-    gap: 20px;
-  }
-
-  .nav_item i {
-    font-size: 21px;
-  }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .container-nav {
     justify-content: center;
   }

@@ -31,7 +31,7 @@
   <!-- Header -->
   <header>
     <div class="container-nav">
-      <a href="#"><img class="menu-logo" src="./img/Logo_Glass_Door_Vertical.png" alt=""></a>
+      <a href="#top"><img class="menu-logo" src="./img/Logo_Glass_Door_Vertical.png" alt=""></a>
       <ul class="nav">
         <li class="nav__item nav__item__products"><a href="#produtos">Nossos Produtos</a></li>
         <li class="nav__item nav__item__about"><a href="#quem_somos">Quem Somos</a></li>
@@ -42,10 +42,10 @@
   </header>
 
     <!-- Carousel -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" id="top">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./img/carousel-image.png"></div>
-        <div class="swiper-slide"><img src="./img/carousel-image.png"></div>
+        <div class="swiper-slide"><img class="banner__desktop" src="./img/banner-desk-2.jpg"><img class="banner__mobile" src="./img/tampa-1.jpg"></div>
+        <div class="swiper-slide"><img class="banner__desktop" src="./img/banner-desk-2.jpg"><img class="banner__mobile" src="./img/tampa-1.jpg"></div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -70,19 +70,19 @@
     </section>
 
     <!-- Informations -->
-    <section class="section-infos">
-      <div class="container-infos">
+    <section class="section__infos">
+      <div class="container__infos">
         <div class="info">
           <i class="bi bi-truck"></i>
-          <p>ENTREGAMOS PARA TODO O BRASIL</p>
+          <p class="info__text">ENTREGAMOS PARA TODO O BRASIL</p>
         </div>
         <div class="info">
           <i class="bi bi-credit-card"></i>
-          <p>PARCELAMOS NO CARTÃO</p>
+          <p class="info__text">PARCELAMOS NO CARTÃO</p>
         </div>
         <div class="info">
           <i class="bi bi-whatsapp"></i>
-          <p>ATENDIMENTO ESPECIALIZADO</p>
+          <p class="info__text">ATENDIMENTO ESPECIALIZADO</p>
         </div>
       </div>
     </section>
@@ -99,19 +99,18 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer_content_logo_socials">
-        <img src="./img/logo-preta.png" class="footer-logo">
+    <div class="footer__content">
+      <div class="footer__content__socials">
+        <img src="./img/logo-preta.png" class="footer__logo">
         <ul class="socials">
-          <img src="./img/hr.png" class="footer-hr">
-          <li><a href="https://api.whatsapp.com/send?phone=5551998192122" target="_blank"><i
-                class="bi bi-whatsapp"></i></a></li>
+          <img src="./img/hr.png" class="footer__hr">
+          <li><a href="https://api.whatsapp.com/send?phone=5551998192122" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
           <li><a href="https://www.instagram.com/_glassdoor_/" target="_blank"><i class="bi bi-instagram"></i></a></li>
         </ul>
       </div>
       <p>Telefone/Whatsapp: (51) 99819-2122<br>Cláudio Estêvão Danzmann
       </p>
-      <div class="footer-bottom">
+      <div class="footer__bottom">
         <p>copyright &copy;2024 glassDoor</p>
       </div>
     </div>
@@ -119,9 +118,6 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- Glightbox -->
   <script src="./js/main.js"></script>

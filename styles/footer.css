@@ -6,7 +6,7 @@ footer {
   box-shadow: 0 10px 20px 12px #000;
 }
 
-.footer-content {
+.footer__content {
   gap: 1.2rem;
   display: flex;
   align-items: center;
@@ -15,14 +15,15 @@ footer {
   text-align: center;
 }
 
-.footer_content_logo_socials {
+.footer__content__socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding-right: 2rem;
 }
 
-.footer-logo {
+.footer__logo {
   width: 180px;
   margin: .8rem 2rem 1.5rem 0;
 }
@@ -50,15 +51,26 @@ footer {
   transition: 0.3s;
 }
 
-.footer-hr {
+.footer__hr {
   width: 1px;
   height: 100px;
 }
 
-.footer-bottom {
+.footer__bottom {
   width: 100%;
   font-size: 13px;
   margin-top: 1rem;
   padding: 0.5rem;
   background-color: #111111;
+}
+
+@media (max-width: 405px) {
+  .footer__content__socials {
+    padding: 0;
+    column-gap: 15px;
+  }
+  
+  .footer__hr {
+    display: none;
+  }
 }

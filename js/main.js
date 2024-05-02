@@ -1,3 +1,22 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId)
+
+    if (targetElement) {
+      const offset = 70
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      })
+    }
+  })
+})
+
 const swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -78,7 +97,7 @@ const productsSection = document.getElementById('products__section')
 async function insertProducts() {
   const products = await loadProducts()
 
-  products.forEach((product, index) => {
+  products.forEach((product) => {
     const aElement = document.createElement('a')
     aElement.href = product.image
     aElement.className = 'glightbox'
@@ -94,6 +113,5 @@ async function insertProducts() {
   const lightbox = GLightbox({ loop: true })
   lightbox.init()
 }
-
 
 insertProducts()
