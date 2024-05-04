@@ -51,6 +51,11 @@ function filterProducts(category) {
     }).join('')
   }
 
+  if (category === 'lareiras') {
+    const activeLareiras = document.querySelector('.active__lareiras')
+    activeLareiras.style.display = 'block'
+  }
+
   products.forEach(product => {
     const productCategories = product.getAttribute('data-category').split(' ')
 
