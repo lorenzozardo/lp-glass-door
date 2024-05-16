@@ -35,8 +35,13 @@ function filterProducts(category) {
     subcategoriesContainer.innerHTML = ''
   }
   
+  const categorySubcategories = {
+    'lareiras': ['Lareiras Modelo de Embutir', 'Lareiras Modelo de Sobrepor', 'Lareiras de Canto'],
+    'churrasqueiras': ['Churrasqueiras Modelo de Embutir', 'Churrasqueiras Modelo de Sobrepor', 'Churrasqueiras de Canto']
+  }
+
   if (category === 'lareiras' || category === 'churrasqueiras') {
-    const subcategories = ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras e Churrasqueiras de Canto']
+    const subcategories = categorySubcategories[category]
     
     subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
       const words = subcategory.split(' ')

@@ -25,6 +25,10 @@
       "category": "churrasqueiras churrasqueiras-sobrepor" 
     },
     { 
+      "image": "./img/lareira-canto-9.jpg", 
+      "category": "lareiras lareiras-canto" 
+    },
+    { 
       "image": "./img/lareira-sobrepor-3.jpg", 
       "category": "lareiras lareiras-sobrepor" 
     },
