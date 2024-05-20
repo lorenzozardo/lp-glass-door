@@ -255,14 +255,13 @@
 
   .swiper-slide .banner__mobile {
     display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
   }
 
   .swiper-slide .banner__desktop {
     display: none;
-  }
-
-  .swiper {
-    height: 400px;
   }
 
   .container__infos {
