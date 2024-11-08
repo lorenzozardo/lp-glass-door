@@ -9,16 +9,40 @@
       "category": "churrasqueiras churrasqueiras-canto" 
     },
     { 
-      "image": "./img/churrasqueira-embutir-1.jpg", 
-      "category": "churrasqueiras churrasqueiras-embutir" 
+      "image": "./img/calefator-8.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/rotativa-12.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/lareira-canto-1.jpg", 
       "category": "lareiras lareiras-canto" 
     },
     { 
+      "image": "./img/calefator-11.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/churrasqueira-embutir-1.jpg", 
+      "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
       "image": "./img/churrasqueira-canto-2.jpg", 
       "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/calefator-1.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/calefator-2.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/rotativa-3.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/churrasqueira-sobrepor-2.jpg", 
@@ -29,6 +53,14 @@
       "category": "lareiras lareiras-canto" 
     },
     { 
+      "image": "./img/rotativa-16.jpg", 
+      "category": "rotativas" 
+    },
+    { 
+      "image": "./img/calefator-14.jpg", 
+      "category": "calefatores" 
+    },
+    { 
       "image": "./img/lareira-sobrepor-3.jpg", 
       "category": "lareiras lareiras-sobrepor" 
     },
@@ -37,8 +69,20 @@
       "category": "lareiras lareiras-embutir" 
     },
     { 
+      "image": "./img/rotativa-7.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/churrasqueira-embutir-2.jpg", 
       "category": "churrasqueiras churrasqueiras-embutir" 
+    },
+    { 
+      "image": "./img/calefator-3.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/calefator-4.jpg", 
+      "category": "calefatores" 
     },
     { 
       "image": "./img/churrasqueira-sobrepor-4.jpg", 
@@ -49,8 +93,24 @@
       "category": "lareiras lareiras-canto" 
     },
     { 
+      "image": "./img/rotativa-15.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/churrasqueira-canto-3.jpg", 
       "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/calefator-5.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/calefator-6.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/calefator-7.jpg", 
+      "category": "calefatores" 
     },
     { 
       "image": "./img/lareira-sobrepor-9.jpg", 
@@ -61,12 +121,24 @@
       "category": "lareiras lareiras-embutir" 
     },
     { 
+      "image": "./img/rotativa-4.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/churrasqueira-sobrepor-12.jpg", 
       "category": "churrasqueiras churrasqueiras-sobrepor" 
     },
     { 
       "image": "./img/tampa-1.jpg", 
       "category": "tampas" 
+    },
+    { 
+      "image": "./img/calefator-9.jpg", 
+      "category": "calefatores" 
+    },
+    { 
+      "image": "./img/rotativa-18.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/lareira-sobrepor-7.jpg", 
@@ -77,20 +149,40 @@
       "category": "churrasqueiras churrasqueiras-embutir" 
     },
     { 
+      "image": "./img/rotativa-8.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/lareira-embutir-4.jpg", 
       "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/calefator-12.jpg", 
+      "category": "calefatores" 
     },
     { 
       "image": "./img/lareira-embutir-5.jpg", 
       "category": "lareiras lareiras-embutir" 
     },
     { 
+      "image": "./img/rotativa-5.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/lareira-sobrepor-4.jpg", 
       "category": "lareiras lareiras-sobrepor" 
     },
     { 
+      "image": "./img/calefator-10.jpg", 
+      "category": "calefatores" 
+    },
+    { 
       "image": "./img/churrasqueira-sobrepor-1.jpg", 
       "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/rotativa-6.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/lareira-canto-3.jpg", 
@@ -101,12 +193,20 @@
       "category": "churrasqueiras churrasqueiras-canto" 
     },
     { 
+      "image": "./img/calefator-13.jpg", 
+      "category": "calefatores" 
+    },
+    { 
       "image": "./img/churrasqueira-embutir-4.jpg", 
       "category": "churrasqueiras churrasqueiras-embutir" 
     },
     { 
       "image": "./img/lareira-canto-4.jpg", 
       "category": "lareiras lareiras-canto" 
+    },
+    { 
+      "image": "./img/rotativa-11.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/lareira-sobrepor-5.jpg", 
@@ -120,9 +220,14 @@
       "image": "./img/churrasqueira-embutir-5.jpg", 
       "category": "churrasqueiras churrasqueiras-embutir" 
     },
+    
     { 
       "image": "./img/lareira-embutir-6.jpg", 
       "category": "lareiras lareiras-embutir" 
+    },
+    { 
+      "image": "./img/rotativa-13.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/churrasqueira-canto-5.jpg", 
@@ -141,6 +246,10 @@
       "category": "lareiras lareiras-embutir" 
     },
     { 
+      "image": "./img/rotativa-14.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/tampa-2.jpg", 
       "category": "tampas" 
     },
@@ -155,6 +264,10 @@
     { 
       "image": "./img/churrasqueira-sobrepor-6.jpg", 
       "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/calefator-15.jpg", 
+      "category": "calefatores" 
     },
     { 
       "image": "./img/churrasqueira-embutir-7.jpg", 
@@ -175,6 +288,10 @@
     { 
       "image": "./img/churrasqueira-sobrepor-7.jpg", 
       "category": "churrasqueiras churrasqueiras-sobrepor" 
+    },
+    { 
+      "image": "./img/rotativa-9.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/lareira-sobrepor-1.jpg", 
@@ -203,6 +320,10 @@
     { 
       "image": "./img/tampa-5.jpg", 
       "category": "tampas"
+    },
+    { 
+      "image": "./img/calefator-16.jpg", 
+      "category": "calefatores" 
     },
     { 
       "image": "./img/suporte-4.jpg", 
@@ -245,6 +366,10 @@
       "category": "suportes"
     },
     { 
+      "image": "./img/rotativa-1.jpg", 
+      "category": "rotativas" 
+    },
+    { 
       "image": "./img/churrasqueira-sobrepor-11.jpg", 
       "category": "churrasqueiras churrasqueiras-sobrepor" 
     },
@@ -263,6 +388,10 @@
     { 
       "image": "./img/churrasqueira-canto-8.jpg", 
       "category": "churrasqueiras churrasqueiras-canto" 
+    },
+    { 
+      "image": "./img/rotativa-2.jpg", 
+      "category": "rotativas" 
     },
     { 
       "image": "./img/lareira-sobrepor-2.jpg", 
@@ -295,10 +424,6 @@
     { 
       "image": "./img/churrasqueira-embutir-14.jpg", 
       "category": "churrasqueiras churrasqueiras-embutir" 
-    },
-    { 
-      "image": "./img/churrasqueira-sobrepor-14.jpg", 
-      "category": "churrasqueiras churrasqueiras-sobrepor" 
     }
   ]
 }

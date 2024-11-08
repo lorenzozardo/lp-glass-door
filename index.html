@@ -44,7 +44,14 @@
     <!-- Carousel -->
     <div class="swiper mySwiper" id="top">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img class="banner__desktop" src="./img/banner-lareira-canto.jpg"><img class="banner__mobile" src="./img/banner-lareira-canto-mobile.jpg"></div>
+        <div class="swiper-slide">
+          <video class="banner__desktop" autoplay muted loop playsinline preload="auto" width="100%" height="700px">
+            <source src="./img/video-banner-2.mp4" type="video/mp4">
+          </video>
+          <video class="banner__mobile" autoplay muted loop playsinline preload="auto" width="100%" height="700px">
+            <source src="./img/video-banner-2.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -54,13 +61,13 @@
     <section class="products" id="produtos">
 
       <div class="categories__section">
-        <strong class="title__categories">Filtro por categoria:</strong>
         <div class="list__categories">
           <a class="active" onclick="filterProducts('all')">Todos</a>
           <a onclick="filterProducts('lareiras')">Lareiras</a>
           <a onclick="filterProducts('churrasqueiras')">Churrasqueiras</a>
           <a onclick="filterProducts('tampas')">Tampas</a>
           <a onclick="filterProducts('rotativas')">Rotativas</a>
+          <a onclick="filterProducts('calefatores')">Calefatores</a>
           <a onclick="filterProducts('suportes')">Suportes para Espetos</a>
         </div>
         <div class="list__subcategories"></div>
@@ -90,10 +97,9 @@
     <section class="about" id="quem_somos">
       <div class="about__text">
         <h1>Quem Somos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est nesciunt excepturi corrupti debitis vitae sequi assumenda, dolores doloremque tempore atque pariatur dolorum modi accusantium nostrum ea nulla deleniti officia!</p>
-      </div>
-      <div class="about__img">
-        <img src="./img/churrasqueira-sobrepor-11.jpg" alt="Foto de Churrasqueira">
+        <p>Somos uma empresa focada na qualidade dos produtos que oferecemos e, consequentemente, na satisfação dos nossos
+        clientes. Seja nas portas de vidro temperado para lareiras e churrasqueiras, nas churrasqueiras rotativas com diversas
+        configurações ou na linha de calefatores, buscamos sempre a excelência, tanto nos produtos quanto no atendimento.</p>
       </div>
     </section>
 
@@ -111,7 +117,7 @@
       <p>Telefone/Whatsapp: (51) 99819-2122<br>Cláudio Estêvão Danzmann
       </p>
       <div class="footer__bottom">
-        <p>copyright &copy;2024 glassDoor</p>
+        <p>copyright &copy;2025 glassDoor</p>
       </div>
     </div>
   </footer>

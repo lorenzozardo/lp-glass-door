@@ -36,8 +36,8 @@ function filterProducts(category) {
   }
   
   const categorySubcategories = {
-    'lareiras': ['Lareiras Modelo de Embutir', 'Lareiras Modelo de Sobrepor', 'Lareiras de Canto'],
-    'churrasqueiras': ['Churrasqueiras Modelo de Embutir', 'Churrasqueiras Modelo de Sobrepor', 'Churrasqueiras de Canto']
+    'lareiras': ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras de Canto'],
+    'churrasqueiras': ['Modelo de Embutir', 'Modelo de Sobrepor', 'Churrasqueiras de Canto']
   }
 
   if (category === 'lareiras' || category === 'churrasqueiras') {
