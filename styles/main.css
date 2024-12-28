@@ -58,7 +58,7 @@
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 30px;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .list__subcategories {
@@ -234,7 +234,7 @@
   }
 
   .list__categories {
-    font-size: 18px;
+    font-size: 17.3px;
     justify-content: flex-start;
   }
   

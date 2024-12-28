@@ -27,14 +27,48 @@ const swiper = new Swiper(".mySwiper", {
   }
 })
 
-function filterProducts(category) {
-  const products = document.querySelectorAll('.products__section a')
-  const subcategoriesContainer = document.querySelector('.list__subcategories')
+async function loadProducts() {
+  const response = await fetch('products.json')
+  const productsJSON = await response.json()
+  return productsJSON.products
+}
 
-  if (category !== 'churrasqueiras-embutir' && category !== 'churrasqueiras-sobrepor' && category !== 'churrasqueiras-canto' && category !== 'lareiras-embutir' && category !== 'lareiras-sobrepor' && category !== 'lareiras-canto') {
+const productsSection = document.getElementById('products__section')
+
+async function insertProducts(category) {
+  const products = await loadProducts()
+
+  productsSection.innerHTML = ''
+
+  const filteredProducts = category === 'all' ? products : products.filter(product => product.category.split(' ').includes(category))
+
+  filteredProducts.forEach((product) => {
+    const aElement = document.createElement('a')
+    aElement.href = product.image
+    aElement.className = 'glightbox'
+    aElement.setAttribute('data-category', product.category)
+
+    const imgElement = document.createElement('img')
+    imgElement.src = product.image
+    imgElement.className = 'img__products'
+
+    aElement.appendChild(imgElement)
+    productsSection.appendChild(aElement)
+  })
+
+  const lightbox = GLightbox({ loop: true })
+  lightbox.init()
+}
+
+function filterProducts(category) {
+  const subcategoriesContainer = document.querySelector('.list__subcategories');
+
+  if (category !== 'churrasqueiras-embutir' && category !== 'churrasqueiras-sobrepor' &&
+    category !== 'churrasqueiras-canto' && category !== 'lareiras-embutir' &&
+    category !== 'lareiras-sobrepor' && category !== 'lareiras-canto') {
     subcategoriesContainer.innerHTML = ''
   }
-  
+
   const categorySubcategories = {
     'lareiras': ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras de Canto'],
     'churrasqueiras': ['Modelo de Embutir', 'Modelo de Sobrepor', 'Churrasqueiras de Canto']
@@ -42,7 +76,7 @@ function filterProducts(category) {
 
   if (category === 'lareiras' || category === 'churrasqueiras') {
     const subcategories = categorySubcategories[category]
-    
+
     subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
       const words = subcategory.split(' ')
       let lastWord = words[words.length - 1]
@@ -51,25 +85,12 @@ function filterProducts(category) {
       } else if (category === 'churrasqueiras') {
         lastWord = "churrasqueiras-" + words[words.length - 1]
       }
-      
-      return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`
+
+      return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`;
     }).join('')
   }
 
-  if (category === 'lareiras') {
-    const activeLareiras = document.querySelector('.active__lareiras')
-    activeLareiras.style.display = 'block'
-  }
-
-  products.forEach(product => {
-    const productCategories = product.getAttribute('data-category').split(' ')
-
-    if (category === 'all' || productCategories.includes(category)) {
-      product.style.display = 'block'
-    } else {
-      product.style.display = 'none'
-    }
-  })
+  insertProducts(category)
 }
 
 const categoriesContainer = document.querySelector(".categories__section")
@@ -88,7 +109,7 @@ categoriesContainer.addEventListener("click", (event) => {
 
   if (target.closest(".list__subcategories a")) {
     const current = document.querySelector(".list__subcategories .active")
-    
+
     if (current) {
       current.classList.remove("active")
     }
@@ -96,32 +117,4 @@ categoriesContainer.addEventListener("click", (event) => {
   }
 })
 
-async function loadProducts() {
-  const response = await fetch('products.json')
-  const productsJSON = await response.json()
-  return productsJSON.products
-}
-
-const productsSection = document.getElementById('products__section')
-
-async function insertProducts() {
-  const products = await loadProducts()
-
-  products.forEach((product) => {
-    const aElement = document.createElement('a')
-    aElement.href = product.image
-    aElement.className = 'glightbox'
-    aElement.setAttribute('data-category', product.category)
-
-    const imgElement = document.createElement('img')
-    imgElement.src = product.image
-    imgElement.className = 'img__products'
-
-    aElement.appendChild(imgElement)
-    productsSection.appendChild(aElement)
-  })
-  const lightbox = GLightbox({ loop: true })
-  lightbox.init()
-}
-
-insertProducts()
+insertProducts('all')
