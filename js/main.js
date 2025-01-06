@@ -63,31 +63,44 @@ async function insertProducts(category) {
 function filterProducts(category) {
   const subcategoriesContainer = document.querySelector('.list__subcategories');
 
-  if (category !== 'churrasqueiras-embutir' && category !== 'churrasqueiras-sobrepor' &&
+  if (category !== 'churrasqueiras-modelos' && category !== 'lareiras-modelos' && category !== 'churrasqueiras-embutir' && category !== 'churrasqueiras-sobrepor' &&
     category !== 'churrasqueiras-canto' && category !== 'lareiras-embutir' &&
     category !== 'lareiras-sobrepor' && category !== 'lareiras-canto') {
     subcategoriesContainer.innerHTML = ''
   }
 
   const categorySubcategories = {
-    'lareiras': ['Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras de Canto'],
-    'churrasqueiras': ['Modelo de Embutir', 'Modelo de Sobrepor', 'Churrasqueiras de Canto']
+    'lareiras': ['Todos os Modelos', 'Modelo de Embutir', 'Modelo de Sobrepor', 'Lareiras de Canto'],
+    'churrasqueiras': ['Todos os Modelos', 'Modelo de Embutir', 'Modelo de Sobrepor', 'Churrasqueiras de Canto']
   }
 
   if (category === 'lareiras' || category === 'churrasqueiras') {
     const subcategories = categorySubcategories[category]
 
-    subcategoriesContainer.innerHTML = subcategories.map(subcategory => {
+    subcategoriesContainer.innerHTML = subcategories.map((subcategory, index) => {
       const words = subcategory.split(' ')
       let lastWord = words[words.length - 1]
+
       if (category === 'lareiras') {
-        lastWord = "lareiras-" + words[words.length - 1]
+        if (index === 0) {
+          lastWord = "lareiras"
+        } else {
+          lastWord = "lareiras-" + words[words.length - 1]
+        }
+
       } else if (category === 'churrasqueiras') {
-        lastWord = "churrasqueiras-" + words[words.length - 1]
+        if (index === 0) {
+          lastWord = "churrasqueiras"
+        } else {
+          lastWord = "churrasqueiras-" + words[words.length - 1]
+        }
       }
 
       return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`;
     }).join('')
+  
+    // Adiciona a classe active para a primeira subcategoria
+    subcategoriesContainer.querySelector('a').classList.add('active')
   }
 
   insertProducts(category)
