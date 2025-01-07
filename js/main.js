@@ -38,26 +38,36 @@ const productsSection = document.getElementById('products__section')
 async function insertProducts(category) {
   const products = await loadProducts()
 
-  productsSection.innerHTML = ''
-
-  const filteredProducts = category === 'all' ? products : products.filter(product => product.category.split(' ').includes(category))
-
-  filteredProducts.forEach((product) => {
-    const aElement = document.createElement('a')
-    aElement.href = product.image
-    aElement.className = 'glightbox'
-    aElement.setAttribute('data-category', product.category)
-
-    const imgElement = document.createElement('img')
-    imgElement.src = product.image
-    imgElement.className = 'img__products'
-
-    aElement.appendChild(imgElement)
-    productsSection.appendChild(aElement)
+  Array.from(productsSection.children).forEach((child) => {
+    child.classList.remove("fade-in")
   })
 
-  const lightbox = GLightbox({ loop: true })
-  lightbox.init()
+  setTimeout(() => {
+    productsSection.innerHTML = ""
+
+    const filteredProducts = category === "all" ? products : products.filter((product) => product.category.split(" ").includes(category))
+
+    filteredProducts.forEach((product) => {
+      const aElement = document.createElement("a")
+      aElement.href = product.image
+      aElement.className = "glightbox"
+      aElement.setAttribute("data-category", product.category)
+
+      const imgElement = document.createElement("img")
+      imgElement.src = product.image
+      imgElement.className = "img__products"
+
+      aElement.appendChild(imgElement)
+      productsSection.appendChild(aElement)
+
+      setTimeout(() => {
+        aElement.classList.add("fade-in")
+      }, 100)
+    })
+
+    const lightbox = GLightbox({ loop: true })
+    lightbox.init()
+  }, 200)
 }
 
 function filterProducts(category) {
@@ -131,3 +141,10 @@ categoriesContainer.addEventListener("click", (event) => {
 })
 
 insertProducts('all')
+
+document.addEventListener("DOMContentLoaded", () => {
+  const productsSection = document.querySelector(".products__section")
+  setTimeout(() => {
+    productsSection.classList.add("show")
+  }, 300)
+})

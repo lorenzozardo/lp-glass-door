@@ -82,7 +82,7 @@
 
 .list__categories a:hover, 
 .list__subcategories a:hover {
-  font-weight: bold;
+  color: #be0201 !important;
 }
 
 .list__categories a:after,
@@ -106,7 +106,6 @@
 }
 
 .active {
-  font-weight: bold;
   color: #be0201 !important;
 }
 
@@ -121,12 +120,17 @@
 }
 
 .products__section a {
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.products__section a.fade-in {
+  opacity: 1;
 }
 
 .img__products {
   max-width: 100%;
-  height: 225px;
+  max-height: 280px;
   width: auto;
   display: flex;
   margin: 0 auto;
