@@ -27,11 +27,12 @@ body {
 
 .whatsapp-fixed {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 180px;
+  height: 62px;
   bottom: 60px;
   right: 30px;
-  background-color: #25d366;
+  padding-left: 10px;
+  background-color: #23bf34;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -41,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: pulse 3s;
 }
 
 .whatsapp-fixed i {
@@ -49,4 +51,19 @@ body {
 
 .whatsapp-fixed:hover {
   color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+.whatsapp-fixed span {
+  font-size: 18px;
+  width: 120px;
+  line-height: 24px;
 }
