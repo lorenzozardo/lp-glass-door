@@ -216,7 +216,7 @@
     font-size: 18px;
     column-gap: 20px;
     row-gap: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   .about__text {
@@ -274,6 +274,11 @@
   .about {
     width: 85%;
     text-align: start;
+  }
+}
+@media (max-width: 720px) {
+  .swiper {
+    height: 280px;
   }
 }
 
