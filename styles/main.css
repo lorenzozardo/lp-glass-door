@@ -115,7 +115,7 @@
 }
 
 .products__section {
-  width: 85%;
+  width: 87%;
   flex-wrap: wrap;
   margin: 40px auto;
   display: grid;
@@ -209,6 +209,7 @@
 @media (max-width: 1000px) {
   .products__section {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
   }
   
   .list__categories {
@@ -235,7 +236,7 @@
 
 @media (max-width: 720px) {
   .categories__section {
-    margin: 25px 10px 0 20px;
+    margin: 30px 10px 0 27px;
   }
 
   .title__categories {

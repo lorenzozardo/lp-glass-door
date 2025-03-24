@@ -34,6 +34,11 @@ async function loadProducts() {
 }
 
 const productsSection = document.getElementById('products__section')
+const subcategoriesContainer = document.querySelector('.list__subcategories')
+
+if (subcategoriesContainer.innerHTML.trim() === '') {
+  subcategoriesContainer.classList.add('d-none')
+}
 
 async function insertProducts(category) {
   const products = await loadProducts()
@@ -71,8 +76,6 @@ async function insertProducts(category) {
 }
 
 function filterProducts(category) {
-  const subcategoriesContainer = document.querySelector('.list__subcategories');
-
   if (category !== 'churrasqueiras-modelos' && category !== 'lareiras-modelos' && category !== 'churrasqueiras-embutir' && category !== 'churrasqueiras-sobrepor' &&
     category !== 'churrasqueiras-canto' && category !== 'lareiras-embutir' &&
     category !== 'lareiras-sobrepor' && category !== 'lareiras-canto') {
@@ -87,10 +90,12 @@ function filterProducts(category) {
   if (category === 'lareiras' || category === 'churrasqueiras') {
     const subcategories = categorySubcategories[category]
 
-    if (category === 'lareiras') {
-      subcategoriesContainer.innerHTML = `<span class="selectedCategory">Portas Lareiras:</span>` 
-    } else if (category === 'churrasqueiras') {
-      subcategoriesContainer.innerHTML = `<span class="selectedCategory">Portas Churrasqueiras:</span>`
+    if (window.innerWidth <= 1000) {
+      if (category === 'lareiras') {
+        subcategoriesContainer.innerHTML = `<span class="selectedCategory">Portas Lareiras:</span>` 
+      } else if (category === 'churrasqueiras') {
+        subcategoriesContainer.innerHTML = `<span class="selectedCategory">Portas Churrasqueiras:</span>`
+      }
     }
 
     subcategoriesContainer.innerHTML += subcategories.map((subcategory, index) => {
@@ -115,8 +120,14 @@ function filterProducts(category) {
       return `<a onclick="filterProducts('${lastWord.toLowerCase()}')">${subcategory}</a>`;
     }).join('')
   
-    // Adiciona a classe active para a primeira subcategoria
+    // adiciona a classe active para a primeira subcategoria
     subcategoriesContainer.querySelector('a').classList.add('active')
+  }
+
+  if (subcategoriesContainer.innerHTML.trim() === '') {
+    subcategoriesContainer.classList.add('d-none')
+  } else {
+    subcategoriesContainer.classList.remove('d-none')
   }
 
   insertProducts(category)
