@@ -61,6 +61,11 @@
   font-size: 19px;
 }
 
+.selectedCategory {
+  color: #be0201 !important;
+  font-weight: 600;
+}
+
 .list__subcategories {
   display: flex;
   justify-content: center;
@@ -208,13 +213,13 @@
   
   .list__categories {
     font-size: 20px;
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 5px;
   }
 
   .list__subcategories {
-    font-size: 18px;
-    column-gap: 20px;
+    font-size: 20px;
+    column-gap: 100%;
     row-gap: 5px;
     margin-top: 20px;
   }
@@ -240,12 +245,12 @@
   }
 
   .list__categories {
-    font-size: 17.3px;
+    font-size: 18px;
     justify-content: flex-start;
   }
   
   .list__subcategories {
-    font-size: 17px;
+    font-size: 18px;
     justify-content: flex-start;
   }
 

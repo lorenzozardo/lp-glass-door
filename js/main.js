@@ -87,7 +87,13 @@ function filterProducts(category) {
   if (category === 'lareiras' || category === 'churrasqueiras') {
     const subcategories = categorySubcategories[category]
 
-    subcategoriesContainer.innerHTML = subcategories.map((subcategory, index) => {
+    if (category === 'lareiras') {
+      subcategoriesContainer.innerHTML = `<span class="selectedCategory">Portas Lareiras:</span>` 
+    } else if (category === 'churrasqueiras') {
+      subcategoriesContainer.innerHTML = `<span class="selectedCategory">Portas Churrasqueiras:</span>`
+    }
+
+    subcategoriesContainer.innerHTML += subcategories.map((subcategory, index) => {
       const words = subcategory.split(' ')
       let lastWord = words[words.length - 1]
 
